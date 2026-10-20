@@ -271,7 +271,7 @@ function PhonePreview() {
     >
       <div className="phone-screen">
         <div className="phone-contact">
-          <span><Utensils size={12} /></span>
+          <span><Utensils size={14} /></span>
           <b>Wunmax Kitchen<small>WhatsApp · ordering assistant</small></b>
         </div>
         <p className="chat-bubble chat-in">
@@ -279,7 +279,7 @@ function PhonePreview() {
           <small>12:01</small>
         </p>
         <p className="chat-bubble chat-out">
-          Got it: 2 × Jollof rice + chicken, 1 × Small chops pack. Total ₦18,500. Reply CONFIRM to place your order.
+          2 × Jollof rice + chicken, 1 Small chops ₦18,500. Reply CONFIRM to place your order.
           <small>12:01</small>
         </p>
         <div className="chat-confirm">CONFIRM <small>12:02</small></div>
@@ -300,7 +300,7 @@ function Home() {
           <div className="hero-copy">
             <span className="hero-badge">Nigmatech. Lagos, Nigeria</span>
             <h1>Software that keeps your business moving.</h1>
-            <p>
+            <p className="build">
               We build Novia, the all-in-one platform for cloud kitchens and Impliment ERP software businesses actually use.
               Then we stay to support it.
             </p>
@@ -345,8 +345,9 @@ function Home() {
       </section>
 
       <section className="sector-strip" aria-label="Industries served">
+        <span className="sector-intro">Trusted by kitchen, manufacturers, builder and distributor</span>
         <div className="home-container sector-row">
-          <span className="sector-intro">Systems for teams across</span>
+          
           {sectors.map((item) => (
             <span className="sector-chip" key={item}>
               {item}
@@ -358,7 +359,7 @@ function Home() {
       <section className="home-section intro-section">
         <div className="home-container intro-grid">
           <div className="section-copy">
-            <Eyebrow>WHO WE ARE</Eyebrow>
+            <span className="copy">About Nigmatech</span>
             <h2>
               We&apos;re a Lagos software company that builds, implements, and
               supports the systems businesses run on.
@@ -401,13 +402,9 @@ function Home() {
         <div className="home-container">
           <div className="section-heading heading-row">
             <div>
-              <Eyebrow>OUR SOLUTIONS</Eyebrow>
+              <span className="copy">Solution</span>
               <h2>Two solutions, one team behind both</h2>
             </div>
-            <p>
-              Purpose-built products and practical systems, backed by people who
-              stay close to the work.
-            </p>
           </div>
           <div className="solution-grid">
             {solutions.map(({ id, label, title, copy, to, action, Icon }) => (
@@ -454,21 +451,16 @@ function Home() {
         <div className="home-container">
           <div className="section-heading heading-row dark-heading">
             <div>
-              <Eyebrow light>HOW WE WORK</Eyebrow>
+              <span className="copy">Why Nigmatech</span>
               <h2>Practical software, built for how business works here.</h2>
             </div>
-            <p>
-              Good systems respect the realities of your operation and make
-              important work easier to do.
-            </p>
           </div>
           <div className="capability-grid">
             {capabilities.map(({ Icon, title, copy }, i) => (
               <article className="capability-card" key={title}>
                 <span className="capability-icon">
-                  <Icon size={17} />
+                  <Icon size={25} />
                 </span>
-                <small>0{i + 1}</small>
                 <h3>{title}</h3>
                 <p>{copy}</p>
               </article>
@@ -498,12 +490,8 @@ function Home() {
       <section className="home-section industries-section">
         <div className="home-container">
           <div className="section-heading">
-            <Eyebrow>WHO WE WORK WITH</Eyebrow>
+            <span className="copy">Industry</span>
             <h2>Built for teams doing the everyday work</h2>
-            <p>
-              We work with growing teams that need their tools to keep pace with
-              their operation.
-            </p>
           </div>
           <div className="industry-grid">
             {industries.map(({ Icon, title, copy }) => (
@@ -513,7 +501,7 @@ function Home() {
                 </span>
                 <h3>{title}</h3>
                 <p>{copy}</p>
-                <ArrowUpRight size={14} />
+                <ArrowUpRight size={20} />
               </article>
             ))}
           </div>
@@ -523,17 +511,16 @@ function Home() {
       <section className="home-section custom-section">
         <div className="home-container custom-grid">
           <div className="section-copy">
-            <Eyebrow>NEED SOMETHING BUILT JUST FOR YOU?</Eyebrow>
+            <span className="copy">custom Software</span>
             <h2>
-              When the off-the-shelf answer doesn&apos;t fit, we build around
-              your business.
+              Need Something built just for you?
             </h2>
             <p>
-              From the first workflow map to the final handover, we help turn a
-              real operational need into software your team can use.
+              When neither solution fits, we design and build software around your process connect
+              it to the system you already use.
             </p>
             <Link className="home-button home-button-dark" to="/contact">
-              Tell us what you need <ArrowRight size={15} />
+              Discuss your project <ArrowRight size={15} />
             </Link>
           </div>
           <div className="service-grid">
