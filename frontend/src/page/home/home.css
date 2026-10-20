@@ -618,7 +618,7 @@ font-size: 17px;
   gap: 8px;
   margin-top: 18px;
   color: var(--nigma-teal-dark);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   text-decoration: none;
 }
@@ -1384,6 +1384,12 @@ font-size: 17px;
   font-size: 9px;
   font-weight: 500;
 }
+.copy {
+  /* color: var(--nigma-teal-dark); */
+  margin-bottom:10px;
+  font-weight: 700;
+  font-size: 35px;
+}
   .hero-copy {
     max-width: 480px;
     padding: 0;
@@ -1479,7 +1485,7 @@ font-size: 17px;
   .section-copy > p:not(.home-eyebrow),
   .section-heading > p {
     margin-top: 12px;
-    font-size: 15px;
+    font-size: 18px;
   }
   .fact-grid {
     gap: 8px;
@@ -1491,13 +1497,13 @@ font-size: 17px;
     border-radius: 11px;
   }
   .fact-grid b {
-    font-size: 33px;
+    font-size: 38px;
   }
   .fact-grid strong {
-    font-size: 14px;
+    font-size: 18px;
   }
   .fact-grid small {
-    font-size: 13px;
+    font-size: 17px;
   }
   .solutions-section,
   .principles-section {
