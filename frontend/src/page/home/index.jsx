@@ -426,9 +426,9 @@ function Home() {
                   </div>
                   <span>
                     {id === "nuvio" ? (
-                      <Utensils size={25} />
+                      <Utensils size={30} />
                     ) : (
-                      <Layers3 size={25} />
+                      <Layers3 size={30} />
                     )}
                   </span>
                   <small>
@@ -496,12 +496,12 @@ function Home() {
           <div className="industry-grid">
             {industries.map(({ Icon, title, copy }) => (
               <article className="industry-card" key={title}>
-                <span>
-                  <Icon size={17} />
+                <span className="industry-icon">
+                  <Icon size={25} />
                 </span>
                 <h3>{title}</h3>
                 <p>{copy}</p>
-                <ArrowUpRight size={20} />
+                <ArrowUpRight size={30} />
               </article>
             ))}
           </div>
@@ -527,7 +527,7 @@ function Home() {
             {services.map(({ Icon, title, copy }) => (
               <article className="service-card" key={title}>
                 <span>
-                  <Icon size={16} />
+                  <Icon size={26} />
                 </span>
                 <ArrowUpRight size={14} />
                 <h3>{title}</h3>
@@ -541,7 +541,7 @@ function Home() {
       <section className="home-section process-section">
         <div className="home-container">
           <div className="section-heading heading-row">
-            <div>
+            <div className="section-heading">
               <Eyebrow>OUR APPROACH</Eyebrow>
               <h2>A clear path from first call to go-live, and beyond</h2>
             </div>
@@ -585,7 +585,7 @@ function Home() {
                 <p>{copy}</p>
                 <footer>
                   <i>
-                    <Check size={13} />
+                    <Check size={25} />
                   </i>
                   <span>
                     <b>{title}</b>
@@ -612,7 +612,7 @@ function Home() {
                   ))}
                 </div>
                 <b>
-                  <Play size={14} fill="currentColor" />
+                  <Play size={20} fill="currentColor" />
                 </b>
               </div>
             </div>
